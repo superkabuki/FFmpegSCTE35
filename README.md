@@ -1,9 +1,4 @@
 # FFmpeg with the SuperKabuki SCTE-35 patch applied.
-## Ever get this message when transcoding a SCTE-35 stream?
-
-![412188557-af4e4bba-3612-4709-9660-48e485b2df9e](https://github.com/user-attachments/assets/a0f8ab8a-2e0d-4229-b867-a093bdf4f0c4)
-
-##  __The SuperKabuki patch stops that from happening.__
 
 
 * The patch  allows you copy a SCTE-35 stream over as SCTE-35, when you're encoding with ffmpeg.
