@@ -55,21 +55,6 @@ Use it just like unpatched FFmpeg.
 ffmpeg -copyts -i input.ts -map 0  -c:v libx265 -c:a aac -c:d copy -muxpreload 0 -muxdelay 0 output.ts
 ```
 
-
-
-* original file
-
-![image](https://github.com/user-attachments/assets/058c33f7-ff81-4fac-b2cb-bd256cfa2862)
-  
-
-* ffmpeg command
-
-![image](https://github.com/user-attachments/assets/6eabe8e5-acde-43c3-a658-dfa748330eb4)
-
-* new file
-
-![image](https://github.com/user-attachments/assets/4e56b2bd-a074-46ab-b5fc-b34341926b41)
-
 ---
 
 
@@ -80,32 +65,7 @@ ffmpeg -copyts -i input.ts -map 0  -c:v libx265 -c:a aac -c:d copy -muxpreload 0
 ffmpeg -copyts -ss 200 -i input.ts -map 0  -c copy -muxpreload 0 -muxdelay 0 output.ts
 ```
 
-* original file
-  
- ![image](https://github.com/user-attachments/assets/058c33f7-ff81-4fac-b2cb-bd256cfa2862)
- 
-
-* ffmpeg command
-  
-![image](https://github.com/user-attachments/assets/049d8711-2c2a-4b4d-b1c6-3f03f1f35f3a)
-
-* new file
-  
-![image](https://github.com/user-attachments/assets/4e56b2bd-a074-46ab-b5fc-b34341926b41)
-
-
 > Notice the start time and duration have both changed by ~200 seconds.
 
-* old
-  
-```js
- Duration: 00:04:56.30, start: 72667.595200, bitrate: 962 kb/s
-```
-
-* new
-
-```js
-  Duration: 00:01:37.75, start: 72866.141867, bitrate: 962 kb/s
-```
 ---
 
