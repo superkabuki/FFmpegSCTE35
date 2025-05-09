@@ -69,3 +69,7 @@ ffmpeg -copyts -ss 200 -i input.ts -map 0  -c copy -muxpreload 0 -muxdelay 0 out
 
 ---
 
+### 3. Dump binary SCTE-35 data to a file.
+```smalltalk
+ffmpeg -i input.ts -map 0:d -f data  -y output.bin
+```
